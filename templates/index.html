@@ -36,7 +36,7 @@
             <div class="sticker">
                 <img src="{{ url_for('static', filename=figurinha.image_path) }}" alt="{{ figurinha.name }}">
                 <p>{{ figurinha.name }}</p>
-                <p>{{ figurinha.posicao }}</p>
+                <!-- <p class="{{ figurinha.posicao }}">{{ figurinha.posicao }}</p> --> 
             </div>
             {% endfor %}
         </div>
