@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e8f5e9;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+nav {
+    margin: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+nav li {
+    display: inline;
+}
+
+nav img {
+    width: 30px;
+    height: auto;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.sticker {
+    width: 28%;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #fff;
+    border: 2px solid #4caf50;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.sticker img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.sticker p {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #4caf50;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.7);
+    padding: 5px;
+}
+
+@media (max-width: 768px) {
+    .sticker {
+        width: 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    .sticker {
+        width: 100%;
+    }
+}
