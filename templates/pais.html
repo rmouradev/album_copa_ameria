@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Álbum de Figurinhas de Futebol - {{ pais }}</title>
+    <title>Álbum Copa América</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 <body>
     <header>
-        <h1>Álbum de Figurinhas de Futebol - {{ pais }}</h1>
+        <h1>Copa América</h1>
         <nav>
             <ul>
                 <li><a href="/pais/argentina"><img src="https://upload.wikimedia.org/wikipedia/commons/1/1a/Flag_of_Argentina.svg" alt="Argentina"></a></li>
@@ -40,5 +40,8 @@
             {% endfor %}
         </div>
     </main>
+    <footer>
+        <p>Todos os direitos reservados</p>
+    </footer>
 </body>
 </html>
