@@ -116,3 +116,25 @@ footer {
 footer p {
     margin: 0;
 }
+
+@media (max-width: 1140px) {
+    .logo {
+        position: relative;
+        top: 0px;
+        left: 0px;
+    }
+}
+
+@media (max-width: 768px) {
+    .sticker {
+        width: 140px;
+        height: 210px;
+    }
+}
+
+@media (max-width: 480px) {
+    .sticker {
+        width: 126px;
+        height: 189px;
+    }
+}

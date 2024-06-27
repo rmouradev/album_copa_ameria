@@ -24,4 +24,4 @@ def pais(pais):
     return render_template('pais.html', pais=pais, figurinhas=figurinhas_pais)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=False)
