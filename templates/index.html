@@ -1,49 +1,20 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Álbum Copa América</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
-    <meta http-equiv="refresh" content="0; URL='/pais/brasil'"/> 
+    <meta http-equiv="refresh" content="0; URL='/pais/brasil'" />
 </head>
+
 <body>
     <header>
-        <h1>Álbum Copa América</h1>
-        <nav>
-            <ul>
-                <li><a href="/pais/argentina"><img src="https://upload.wikimedia.org/wikipedia/commons/1/1a/Flag_of_Argentina.svg" alt="Argentina"></a></li>
-                <li><a href="/pais/bolivia"><img src="https://upload.wikimedia.org/wikipedia/commons/4/48/Flag_of_Bolivia.svg" alt="Bolívia"></a></li>
-                <li><a href="/pais/brasil"><img src="https://upload.wikimedia.org/wikipedia/en/0/05/Flag_of_Brazil.svg" alt="Brasil"></a></li>
-                <li><a href="/pais/canada"><img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Flag_of_Canada.svg" alt="Canadá"></a></li>
-                <li><a href="/pais/chile"><img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Flag_of_Chile.svg" alt="Chile"></a></li>
-                <li><a href="/pais/colombia"><img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Flag_of_Colombia.svg" alt="Colômbia"></a></li>
-                <li><a href="/pais/costa_rica"><img src="https://upload.wikimedia.org/wikipedia/commons/f/f2/Flag_of_Costa_Rica.svg" alt="Costa Rica"></a></li>
-                <li><a href="/pais/equador"><img src="https://upload.wikimedia.org/wikipedia/commons/e/e8/Flag_of_Ecuador.svg" alt="Equador"></a></li>
-                <li><a href="/pais/estados_unidos"><img src="https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg" alt="Estados Unidos"></a></li>
-                <li><a href="/pais/jamaica"><img src="https://upload.wikimedia.org/wikipedia/commons/0/0a/Flag_of_Jamaica.svg" alt="Jamaica"></a></li>
-                <li><a href="/pais/mexico"><img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/Flag_of_Mexico.svg" alt="México"></a></li>
-                <li><a href="/pais/panama"><img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Flag_of_Panama.svg" alt="Panamá"></a></li>
-                <li><a href="/pais/paraguai"><img src="https://upload.wikimedia.org/wikipedia/commons/2/27/Flag_of_Paraguay.svg" alt="Paraguai"></a></li>
-                <li><a href="/pais/peru"><img src="https://upload.wikimedia.org/wikipedia/commons/d/df/Flag_of_Peru_%28state%29.svg" alt="Peru"></a></li>
-                <li><a href="/pais/uruguai"><img src="https://upload.wikimedia.org/wikipedia/commons/f/fe/Flag_of_Uruguay.svg" alt="Uruguai"></a></li>
-                <li><a href="/pais/venezuela"><img src="https://upload.wikimedia.org/wikipedia/commons/0/06/Flag_of_Venezuela.svg" alt="Venezuela"></a></li>
-            </ul>
-        </nav>
+        <p>...carregando</p>
     </header>
     <main>
-        <div class="container">
-            {% for figurinha in figurinhas %}
-            <div class="sticker">
-                <img src="{{ url_for('static', filename=figurinha.image_path) }}" alt="{{ figurinha.name }}">
-                <p>{{ figurinha.name }}</p>
-                <!-- <p class="{{ figurinha.posicao }}">{{ figurinha.posicao }}</p> --> 
-            </div>
-            {% endfor %}
-        </div>
     </main>
-    <footer>
-        <p>Todos os direitos reservados</p>
-    </footer>
 </body>
+
 </html>
