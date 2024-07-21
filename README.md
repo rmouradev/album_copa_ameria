@@ -1,4 +1,4 @@
-Album da Copa Améria 
+Album da Copa América 
 Criado para efeito de estudos
 
 Veja o projeto do site em: 
